@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="content">
+  <h1>Крестики-нолики</h1>
+  <div class="container">
+    <div class="field-wrapper">
+      <a class="new-game">Новая игра</a>
+      <br>
+      <div class="field">
+        <table>
+          <tr>
+            <td class="cell" value="0" onclick="makeMove(0)">x</td>
+            <td class="cell" value="1" onclick="makeMove(1)">x</td>
+            <td class="cell" value="2" onclick="makeMove(2)">x</td>
+          </tr>
+          <tr>
+            <td class="cell" value="3" onclick="makeMove(3)">x</td>
+            <td class="cell" value="4" onclick="makeMove(4)">x</td>
+            <td class="cell" value="5" onclick="makeMove(5)">x</td>
+          </tr>
+          <tr>
+            <td class="cell" value="6" onclick="makeMove(6)">x</td>
+            <td class="cell" value="7" onclick="makeMove(7)">x</td>
+            <td class="cell" value="8" onclick="makeMove(8)">x</td>
+          </tr>
+        </table>
+        <h3 id="step">Ход игрока <span id="player"></span></h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

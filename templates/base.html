@@ -1,0 +1,19 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  {% block head_extra %} {% endblock head_extra %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+
+</head>
+<body>
+{% block content %}
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script src='{% static "js/main.js" %}'></script>
+</body>
+</html>
